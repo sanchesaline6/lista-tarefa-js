@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;;
+    box-sizing: border-box;
+}
+
+:root{
+    --purpler-light: #DDD2EF;
+    --purple-base: #9359F3;
+    --purpler-dark: #6F3CC3;
+    --green-light: #BFE3D0;
+    --green-base: #479C6E;
+    --green-dark: #2D6C4A;
+    --gray-100: #F0EDF2;
+    --gray-200: #E5E2E9;
+    --gray-300: #E0DCE4;
+    --gray-400: #D1CBD7;
+    --gray-500: #6B6572;
+    --gray-600: #262428;
+    --danger: #C2464D;
+}
+
+.subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--gray-500);
+}
+
+.text-md{
+    color: var(--gray-500);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+header{
+    background-color: var(--gray-300);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+form{
+    position: absolute;
+    left: 30%;
+    top:20%;
+    display: flex;
+    gap: 8px;
+}
+
+form input{
+    width: 618px;
+    height: 52px;
+    padding: 0 18px;
+    border-radius: 8px;
+    background-color: var(--gray-100);
+    border: 2px var(--gray-300) solid;    
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+form button{
+    width: 110px;
+    height: 52px;
+    padding: 0 24px;
+    background-color: var(--purpler-dark);
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--purpler-dark);
+}
+
+form button i{
+    font-size: 20px;
+}
+
+main #contadores{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    width: 736px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #contadores p{
+    color: var(--gray-500);
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+main #contadores p #cont-criadas{
+    color: var(--purpler-dark);
+    background-color: var(--purpler-light);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+main #contadores p #cont-concluidas{
+    color: var(--green-dark);
+    background-color: var(--green-light);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+main #lista-vazia{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    border-top: 1px solid var(--gray-300);
+    margin-top: 24px;
+    width: 736px;
+    height: 279px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #lista-vazia i{
+    font-size: 48px;
+    color: var(--purpler-light);
+    padding-bottom: 16px;
+}
+
+main #lista{
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    margin-top: 24px;
+    width: 736px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #lista ul{
+    list-style-type: none;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+main #lista ul li{
+    width: 736px;
+    height: 72px;
+    padding: 16px;
+    background-color: var(--gray-300);
+    border: 1px solid var(--gray-400);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+main #lista ul li button{
+    background-color: var(--gray-300);
+    border: none;
+}
+
+main #lista ul li button span{
+    width: 100%;
+}
+main #lista ul li button i{
+    color: var(--gray-500);
+    font-size: 24px;
+}

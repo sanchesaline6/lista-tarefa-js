@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Lista de Tarefas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+        <h1><img src="./assets/images/Logo.svg" alt="Logo todo list"></h1>
     </header>
     <main>
-        <h1>Lista de Tarefas</h1>
+      <form action="" id="todo-form">
+        <input
+          type="text"
+          id="task-title"
+          placeholder="Adicione uma nova tarefa"
+        />
+        <button id="btn-adicionar">Criar <i class="ph ph-plus-circle"></i></button>
+      </form>
 
-        <form action="" id="todo-form">
-            <input type="text" id="task-title" placeholder="Informar o item da lista....">
-            <button id="btn-adicionar">Adicionar</button>
-        </form>
-
-        <section>
-            <ul id="todo-lista">
-            </ul>
-        </section>
-
-        <section>
-            <ul id="todo-lista-removida"></ul>
-        </section>
+      <section id="contadores">
+        <p>Tarefas criadas <span id="cont-criadas">16</span></p>
+        <p>Concluídas <span id="cont-concluidas">8</span></p>
+      </section>
+      <section id="lista-vazia">
+        <i class="ph ph-clipboard-text"></i>
+        <p class="subtitle">Você ainda não tem tarefas cadastradas</p>
+        <p class="text-md">Crie tarefas e organize seus itens a fazer</p>
+      </section>
+      <section id="lista">
+        <ul id="todo-lista"></ul>
+      </section>
     </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
